@@ -26,23 +26,49 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px;
         }
         td, th {
             border: 1px solid gray;
             padding: 10px;
         }
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        tbody tr:nth-child(2n) {  /* posso usar tambem (odd-impar ou even-pares) */
+            background-color: lightgray;
+        }
         td.num {
             text-align: right;
         }
+        h1 {
+
+        }
+        p {
+            text-align: justify;
+        }
     </style>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -157,10 +183,21 @@
 
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td>210.147.125</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a doloribus facilis saepe at voluptatibus? Esse obcaecati expedita, doloribus non alias sed distinctio ea nemo quo minus, reprehenderit accusamus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit, possimus eaque qui consectetur alias harum odio quam necessitatibus quis exercitationem excepturi architecto tempora nam aut deleniti, quae iste laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, repudiandae rem soluta velit cumque praesentium modi quo voluptas culpa quas. Eum culpa perferendis consequuntur quibusdam. Sequi doloribus non voluptate illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt voluptate, quia tempora illum obcaecati voluptatum accusamus dignissimos sed velit nemo mollitia consectetur nobis et repudiandae qui optio impedit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam velit saepe dicta eaque quod corrupti, ducimus quo in quae, incidunt animi modi quia fuga nihil quasi illum laborum voluptatibus?</p>
 </body>
 </html>
