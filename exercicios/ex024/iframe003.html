@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça Uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe obcaecati iure ab, porro quaerat laboriosam iusto. Pariatur explicabo dicta provident blanditiis. Nesciunt quidem iure doloremque, temporibus voluptatibus magni. Mollitia, nobis.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, obcaecati. A impedit pariatur odit mollitia rem ea voluptate. Quo odit commodi ut illum atque dolorem ducimus eveniet voluptates, perferendis dolore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsam veritatis dolorem at exercitationem deserunt consequuntur ullam vero. Delectus aspernatur unde voluptatum culpa esse libero repudiandae nulla aliquid, et impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt quisquam ipsa nostrum nesciunt consectetur esse et libero, temporibus reiciendis distinctio maxime, obcaecati vero nulla voluptate, veniam mollitia autem tenetur!</p>
+
+    <iframe 
+        id="tela" 
+        name="frame" 
+        srcdoc="<h1>Escolha Uma das Opções a cima</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vel distinctio. Neque iure fugiat dicta doloribus tenetur debitis. Reiciendis exercitationem aliquid quae ad libero, voluptate ab impedit ratione perferendis! Maiores.</p>
+        <img src='img/computador.png'>"
+        frameborder="0">
+        <p>Infelismente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit cumque ea facilis ratione? Voluptatem saepe distinctio cupiditate voluptates sequi doloribus, inventore optio eaque sunt, asperiores fugiat vero porro facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quia quae? Praesentium autem error eum ex possimus. Quisquam consequuntur sequi ab dolores ea repellendus veritatis nostrum id, nam cumque quibusdam.</p>
+    
+</body>
+</html>
