@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>M04C24A11-Formulários</title>
+</head>
+<body>
+    <h1>M04C24A11-Formulários</h1>
+    <h2>Arquivo: form009.html</h2>
+    <h3>Excercício de Formulários</h3>
+
+    <form action="cadastro.php" method="post" autocomplete="on">        
+        <p>
+            <label for="inum">Numero: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5"
+            oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <div class="obs">
+        <h3>Anotações: </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci consectetur autem animi pariatur blanditiis vitae et accusamus? Sequi, deleniti ipsa, ab porro alias numquam labore unde hic quos tempora dolor.</p>
+    </div>
+</body>
+</html>

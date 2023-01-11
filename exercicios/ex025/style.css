@@ -10,6 +10,11 @@ html, body{
     margin: auto;
     max-width: 500px;
     padding: 10px;
+    border: 2px solid black;
+}
+form{
+    border: 1px solid black;
+    padding: 10px;
 }
 .obs{
     margin-top: 200px;
