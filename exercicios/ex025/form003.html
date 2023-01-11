@@ -9,10 +9,22 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+        html, body{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            max-width: 500px;
+            padding: 10px;
+        }
+        p#anotacoes{
+            margin-top: 200px;
+        }
     </style>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
+    <h1>M04C24A05-Formulários</h1>
+    <h2>Teste de Formulário</h2>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
@@ -41,6 +53,9 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <p id="anotacoes">Anotações: </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci consectetur autem animi pariatur blanditiis vitae et accusamus? Sequi, deleniti ipsa, ab porro alias numquam labore unde hic quos tempora dolor.</p>
 
     
 </body>
